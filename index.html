@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galla Abogados | Firma Legal en Ciudad de México</title>
+    
+    <!-- SEO Meta Tags Optimizados para CDMX -->
+    <meta name="description" content="Galla Abogados: Firma legal de prestigio en Ciudad de México. Soluciones jurídicas estratégicas en derecho corporativo, financiero y litigios para empresas en CDMX.">
+    <meta name="keywords" content="abogados en ciudad de méxico, firma legal cdmx, derecho corporativo méxico, asesoría legal cdmx, Galla Abogados, litigios cdmx, abogados para empresas méxico">
+    <meta name="author" content="Galla Abogados">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.gallaabogados.com">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Galla Abogados | Firma Legal en Ciudad de México">
+    <meta property="og:description" content="Soluciones jurídicas estratégicas con un enfoque moderno y minimalista en el corazón de México.">
+    <meta property="og:image" content="https://placehold.co/1200x630/484a55/fdfceb?text=Galla+Abogados+CDMX">
+    <meta property="og:url" content="https://www.gallaabogados.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/fdfceb/484a55?text=G" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- SEO: Structured Data (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Galla Abogados",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad de México",
+        "addressCountry": "MX"
+      },
+      "url": "https://www.gallaabogados.com",
+      "telephone": "+525500000000",
+      "priceRange": "$$$",
+      "image": "https://placehold.co/1200x630/484a55/fdfceb?text=Galla+Abogados+CDMX",
+      "description": "Firma legal de prestigio en Ciudad de México especializada en derecho corporativo, financiero y litigios.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Ciudad de México"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --color-principal: #fdfceb;
+            --color-secundario: #484a55; /* Azul oscuro como principal */
+            --color-secundario-2: #7385a9;
+            --color-texto: #010101;
+            --color-acento: #ed7b30; /* Naranja como acento */
+            --font-serif: 'Lora', serif;
+            --font-sans: 'Poppins', sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-secundario);
+            color: var(--color-principal);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* --- CURSOR DE PUNTO Y CONTORNO --- */
+        .cursor-dot, .cursor-outline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            border-radius: 50%;
+            opacity: 0; /* Oculto por defecto, se muestra con JS */
+            transform: translate(-50%, -50%); /* Centrado perfecto */
+        }
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--color-principal);
+            mix-blend-mode: difference;
+            transition: background-color 0.2s ease-out;
+        }
+        .cursor-outline {
+            width: 30px;
+            height: 30px;
+            border: 2px solid var(--color-principal);
+            mix-blend-mode: difference;
+            transition: transform 0.2s ease-out, border-color 0.2s ease-out;
+        }
+        .cursor-outline.grow {
+            transform: translate(-50%, -50%) scale(1.8);
+            border-color: var(--color-acento);
+        }
+        .cursor-dot.on-hover {
+            background-color: transparent;
+        }
+
+        /* Ocultar cursor personalizado y mostrar el nativo en mobile/tablet */
+        @media (max-width: 1024px) {
+            .cursor-dot, .cursor-outline {
+                display: none;
+            }
+        }
+        /* Ocultar cursor nativo solo en desktop */
+        @media (min-width: 1025px) {
+            body, a, button, .faq-question {
+                cursor: none;
+            }
+        }
+
+        h1, h2, h3 { font-family: var(--font-serif); color: var(--color-principal); font-weight: 600; }
+        p { line-height: 1.8; color: rgba(253, 252, 235, 0.8); font-weight: 300; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 8rem 0; }
+
+        .navbar { position: fixed; top: 0; left: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 2rem 5%; z-index: 1000; transition: background-color 0.3s ease, padding 0.3s ease; }
+        .navbar.scrolled { background-color: rgba(72, 74, 85, 0.8); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 1.5rem 5%; border-bottom: 1px solid rgba(253, 252, 235, 0.1); }
+        .nav-logo { font-weight: 600; font-family: var(--font-serif); font-size: 1.8rem; color: var(--color-principal); text-decoration: none; }
+        .nav-links { display: flex; gap: 2.5rem; }
+        .nav-links a { text-decoration: none; color: var(--color-principal); font-weight: 400; position: relative; padding: 0.5rem 0; transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--color-acento); }
+        
+        .hamburger { display: none; z-index: 1001; position: relative; width: 25px; height: 20px; }
+        .hamburger div { width: 25px; height: 2px; background-color: var(--color-principal); transition: all 0.4s ease-in-out; position: absolute; }
+        .hamburger .line1 { top: 0; }
+        .hamburger .line2 { top: 50%; transform: translateY(-50%); }
+        .hamburger .line3 { bottom: 0; }
+        
+        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; padding: 0 5%; }
+        .hero-content { max-width: 900px; }
+        .hero h1 { font-size: clamp(3.5rem, 8vw, 7rem); line-height: 1.1; margin-bottom: 2rem; }
+        .hero h1 .line { display: block; overflow: hidden; padding-bottom: 0.1em; }
+        .hero h1 .line-inner { display: block; }
+        .hero p { font-size: 1.25rem; max-width: 500px; margin-bottom: 2.5rem; }
+        .cta-button { padding: 1rem 2.5rem; border: 1px solid var(--color-acento); color: var(--color-acento); text-decoration: none; border-radius: 50px; font-weight: 500; transition: background-color 0.3s ease, color 0.3s ease; display: inline-block; }
+        .cta-button:hover { background-color: var(--color-acento); color: var(--color-principal); }
+
+        .philosophy { border-top: 1px solid rgba(253, 252, 235, 0.1); border-bottom: 1px solid rgba(253, 252, 235, 0.1); }
+        .philosophy-content { display: flex; justify-content: space-between; align-items: center; gap: 5rem; }
+        .philosophy-text-content { flex-basis: 50%; }
+        .philosophy-text-content h2 { font-size: 3rem; line-height: 1.2; margin-bottom: 2rem; }
+        .philosophy-text-content p { font-size: 1.1rem; }
+        .philosophy-image-content { flex-basis: 50%; }
+        .philosophy-image-content img { width: 100%; height: auto; object-fit: cover; border-radius: 20px; }
+
+        .services-horizontal { padding-top: 8rem; padding-bottom: 8rem; overflow: hidden; }
+        .services-horizontal h2 { font-size: 3rem; margin-bottom: 1rem; padding-left: 5%; }
+        .services-horizontal p.subtitle { font-size: 1.1rem; color: rgba(253, 252, 235, 0.7); padding-left: 5%; margin-bottom: 5rem; }
+        .services-container { height: 320px; width: 100%; }
+        .services-wrapper { height: 100%; display: flex; width: max-content; padding-left: 5%; }
+        .service-card {
+            width: 350px; height: 100%;
+            background-color: rgba(253, 252, 235, 0.05);
+            border-radius: 20px; margin-right: 2rem; padding: 2rem;
+            display: flex; flex-direction: column;
+            border: 1px solid rgba(253, 252, 235, 0.1);
+            text-decoration: none; color: var(--color-principal);
+            transition: background-color 0.3s ease;
+        }
+        .service-card:hover { background-color: rgba(253, 252, 235, 0.1); }
+        .service-card .card-top { flex-grow: 1; }
+        .service-card h3 { font-size: 1.8rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .service-card p { font-size: 0.9rem; color: rgba(253, 252, 235, 0.7); margin-top: 0.5rem; }
+        .service-card .icon { font-size: 2rem; color: var(--color-acento); align-self: flex-end; margin-top: 1rem; }
+
+        .faq { border-top: 1px solid rgba(253, 252, 235, 0.1); }
+        .faq h2 { text-align: center; font-size: 3rem; margin-bottom: 5rem; }
+        .faq-item { border-bottom: 1px solid rgba(253, 252, 235, 0.2); padding: 2rem 0; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; font-size: 1.5rem; font-family: var(--font-serif); }
+        .faq-question .iconify { transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); font-size: 1.5rem; flex-shrink: 0; margin-left: 1rem; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .faq-answer p { padding-top: 1.5rem; max-width: 90%; }
+        .faq-item.active .faq-question .iconify { transform: rotate(135deg); }
+
+        .final-cta { background-color: var(--color-principal); text-align: center; border-radius: 30px; }
+        .final-cta h2 { font-size: clamp(2.5rem, 6vw, 4rem); color: var(--color-secundario); margin-bottom: 1.5rem; }
+        .final-cta p { color: var(--color-secundario); margin-bottom: 2.5rem; font-size: 1.1rem; }
+        .final-cta .cta-button { background-color: var(--color-acento); border-color: var(--color-acento); color: var(--color-principal); }
+        .final-cta .cta-button:hover { background-color: var(--color-secundario); border-color: var(--color-secundario); color: var(--color-principal); }
+
+        .footer { padding: 4rem 5% 2rem 5%; }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(253, 252, 235, 0.2); }
+        .footer-logo { font-size: 1.8rem; font-family: var(--font-serif); }
+        .footer-links a { color: rgba(253, 252, 235, 0.7); text-decoration: none; margin: 0 1rem; }
+        .footer-bottom { text-align: center; padding-top: 2rem; font-size: 0.9rem; color: rgba(253, 252, 235, 0.5); }
+        
+        .crafted-by {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: rgba(253, 252, 235, 0.5);
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        .crafted-by:hover {
+            color: var(--color-principal);
+        }
+        .crafted-by img {
+            height: 16px;
+            width: auto;
+        }
+
+        .mobile-nav { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: var(--color-secundario); z-index: 999; display: flex; flex-direction: column; justify-content: center; align-items: center; transform: translateX(100%); transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
+        .mobile-nav.open { transform: translateX(0); }
+        .mobile-nav a { color: var(--color-principal); text-decoration: none; font-size: 2.5rem; font-family: var(--font-serif); margin: 1.5rem 0; opacity: 0; transform: translateY(20px); }
+
+        .hamburger.toggled .line1 { top: 50%; transform: translateY(-50%) rotate(45deg); }
+        .hamburger.toggled .line2 { opacity: 0; }
+        .hamburger.toggled .line3 { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+
+        @media (max-width: 1024px) {
+            .nav-links { display: none; }
+            .hamburger { display: block; }
+            .container { padding: 5rem 0; }
+            .philosophy-content { flex-direction: column; text-align: center; gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <a href="#" class="nav-logo" alt="Galla Abogados Logo">Galla Abogados</a>
+        <div class="nav-links">
+            <a href="#philosophy">Filosofía</a>
+            <a href="#services">Servicios</a>
+            <a href="#faq">Preguntas</a>
+            <a href="#contact">Contacto</a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <div class="mobile-nav">
+        <a href="#philosophy">Filosofía</a>
+        <a href="#services">Servicios</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contact">Contacto</a>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                    <span class="line"><span class="line-inner">Estrategia Legal,</span></span>
+                    <span class="line"><span class="line-inner">Resultados Confiables.</span></span>
+                </h1>
+                <p>Fusionamos la profundidad del conocimiento legal con una ejecución impecable para proteger y potenciar su visión en la Ciudad de México.</p>
+                <a href="#contact" class="cta-button">Iniciar Conversación</a>
+            </div>
+        </section>
+
+        <section id="philosophy" class="philosophy container">
+            <div class="philosophy-content">
+                <div class="philosophy-text-content">
+                    <h2>Nuestra Filosofía</h2>
+                    <p>Creemos en un enfoque legal que es a la vez riguroso y dinámico. No nos limitamos a resolver problemas; nos anticipamos a ellos. Cada caso es un ejercicio de claridad, estrategia y dedicación absoluta a los objetivos de nuestros clientes.</p>
+                </div>
+                <div class="philosophy-image-content">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1887&auto=format&fit=crop" alt="Abogado profesional en oficina moderna">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-horizontal">
+            <h2>Áreas de Práctica</h2>
+            <p class="subtitle">Nuestra experiencia a su servicio. Haga clic para consultar.</p>
+            <div class="services-container">
+                <div class="services-wrapper">
+                    <!-- Las tarjetas de servicio se generan con JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question"><span>¿Cuál es su enfoque principal?</span><span class="iconify" data-icon="icon-park-outline:plus"></span></div>
+                    <div class="faq-answer"><p>Nuestro enfoque es estratégico y preventivo. Nos especializamos en derecho corporativo y financiero, ayudando a las empresas a navegar entornos complejos con seguridad y visión a largo plazo.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>¿Cómo es el proceso de incorporación de un nuevo cliente?</span><span class="iconify" data-icon="icon-park-outline:plus"></span></div>
+                    <div class="faq-answer"><p>Comienza con una sesión de inmersión para entender a fondo su negocio y sus metas. A partir de ahí, diseñamos una estructura legal y de comunicación a medida, asegurando una colaboración transparente y eficiente.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>¿Qué los diferencia de otras firmas?</span><span class="iconify" data-icon="icon-park-outline:plus"></span></div>
+                    <div class="faq-answer"><p>Nuestra diferencia radica en la claridad. Traducimos la complejidad legal en estrategias accionables y comprensibles. Somos más que abogados; somos socios estratégicos en el crecimiento de su empresa.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="final-cta container">
+            <h2>Hablemos.</h2>
+            <p>Descubra cómo una asesoría legal precisa puede ser su mayor ventaja competitiva.</p>
+            <a href="https://wa.link/6hsfca" target="_blank" class="cta-button">Contáctanos</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Galla Abogados</div>
+            <div class="footer-links">
+                <a href="#philosophy">Filosofía</a>
+                <a href="#services">Servicios</a>
+                <a href="#faq">Preguntas</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Galla Abogados. Todos los derechos reservados.</p>
+            <a href="https://www.cosmicaweb.com/" target="_blank" class="crafted-by">
+                <span>Crafted by</span>
+                <img src="https://cdn.prod.website-files.com/68026a0651df0f492c75ff17/68052b14352271978c443cef_CO%CC%81SMICA_Blanco_L.avif" alt="Logo Cósmica">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        
+        // --- CURSOR PERSONALIZADO ---
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        const isDesktop = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+        if (isDesktop) {
+            gsap.set([cursorDot, cursorOutline], {xPercent: -50, yPercent: -50});
+            
+            window.addEventListener('mousemove', (e) => {
+                gsap.to(cursorDot, { duration: 0.2, x: e.clientX, y: e.clientY });
+                gsap.to(cursorOutline, { duration: 0.6, x: e.clientX, y: e.clientY });
+                gsap.to([cursorDot, cursorOutline], { opacity: 1 });
+            });
+
+            document.querySelectorAll('a, button, .faq-question').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorOutline.classList.add('grow');
+                    cursorDot.classList.add('on-hover');
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursorOutline.classList.remove('grow');
+                    cursorDot.classList.remove('on-hover');
+                });
+            });
+        }
+
+        // --- NAVBAR SCROLL EFFECT ---
+        ScrollTrigger.create({
+            start: 'top -80', end: 99999,
+            toggleClass: { className: 'scrolled', targets: '.navbar' }
+        });
+
+        // --- ANIMACIONES DE ENTRADA ---
+        gsap.from('.hero .line-inner', { y: '100%', duration: 1, stagger: 0.1, ease: 'power4.out', delay: 0.5 });
+        gsap.from(['.hero p', '.hero .cta-button'], { opacity: 0, y: 20, duration: 1, stagger: 0.2, delay: 1 });
+
+        const sections = gsap.utils.toArray('.philosophy-content, .services-horizontal h2, .faq h2, .faq-item');
+        sections.forEach(section => {
+            gsap.from(section, {
+                scrollTrigger: { trigger: section, start: 'top 85%', toggleActions: 'play none none none' },
+                opacity: 0, y: 50, duration: 1, ease: 'power3.out'
+            });
+        });
+        
+        // --- GENERACIÓN DE SERVICIOS ---
+        const services = [
+            { title: "Derecho corporativo", desc: "Estructuración, gobierno corporativo y contratos." },
+            { title: "Asesoría patrimonial", desc: "Protección y planificación de patrimonios." },
+            { title: "Bancario y financiero", desc: "Regulación, financiamiento y operaciones complejas." },
+            { title: "Derecho tributario", desc: "Consultoría fiscal, litigios y planeación estratégica." },
+            { title: "Cumplimiento", desc: "Programas de compliance y prevención de riesgos." },
+            { title: "Derecho civil", desc: "Contratos, obligaciones y litigios civiles." },
+            { title: "Fusiones y adquisiciones", desc: "Asesoría integral en transacciones (M&A)." },
+            { title: "Ley fintech", desc: "Regulación para startups de tecnología financiera." },
+            { title: "Protección de datos", desc: "Cumplimiento normativo y gestión de la información." }
+        ];
+
+        const servicesWrapper = document.querySelector('.services-wrapper');
+        const whatsappLink = 'https://wa.link/6hsfca';
+        services.forEach(service => {
+            const cardLink = document.createElement('a');
+            cardLink.href = whatsappLink;
+            cardLink.target = '_blank';
+            cardLink.className = 'service-card';
+            cardLink.innerHTML = `
+                <div class="card-top">
+                    <h3>${service.title}</h3>
+                    <p>${service.desc}</p>
+                </div>
+                <span class="icon iconify" data-icon="ph:arrow-up-right"></span>
+            `;
+            servicesWrapper.appendChild(cardLink);
+        });
+
+        // --- SCROLL HORIZONTAL ESTABLE Y RECONSTRUIDO ---
+        const servicesSection = document.querySelector('.services-horizontal');
+        let horizontalScroll = gsap.to(servicesWrapper, {
+            x: () => -(servicesWrapper.scrollWidth - window.innerWidth),
+            ease: "none",
+            scrollTrigger: {
+                trigger: servicesSection,
+                start: "top top",
+                end: () => "+=" + (servicesWrapper.scrollWidth - window.innerWidth),
+                pin: true,
+                scrub: true,
+                invalidateOnRefresh: true
+            }
+        });
+
+        // --- FAQ ---
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                faqItems.forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.faq-answer').style.maxHeight = null;
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // --- MENÚ MOBILE ---
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = mobileNav.classList.toggle('open');
+            hamburger.classList.toggle('toggled');
+            
+            if (isOpen) {
+                gsap.to(mobileNavLinks, {
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.1,
+                    duration: 0.5,
+                    ease: 'power3.out',
+                    delay: 0.3
+                });
+            } else {
+                gsap.to(mobileNavLinks, {
+                    opacity: 0,
+                    y: 20,
+                    duration: 0.2
+                });
+            }
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('open');
+                hamburger.classList.remove('toggled');
+                gsap.to(mobileNavLinks, { opacity: 0, y: 20, duration: 0.2 });
+            });
+        });
+
+    });
+    </script>
+</body>
+</html>
